@@ -32,7 +32,7 @@ export class MoviesService {
   }
 
   update(id: number, updateDate: UpdateMovieDTO) {
-    const movie = this.getOne(id);
+    const movie = this.getOne(id)
     this.deleteOne(id);
     this.movies.push({
       ...movie,
